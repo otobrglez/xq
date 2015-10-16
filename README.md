@@ -2,6 +2,8 @@
 
 [xq] is a lightweight command-line XPath processor for HTML and XML.
 
+[![Build Status](https://travis-ci.org/otobrglez/xq.svg?branch=master)](https://travis-ci.org/otobrglez/xq)
+
 ## Usage
 
 Extracting simple content from HTML with XPath:
