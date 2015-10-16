@@ -5,7 +5,6 @@ go:
 
 addons:
   artifacts: true
-  debug: true
 
 sudo: false
 
@@ -23,8 +22,10 @@ env:
 
   global:
     - CGO_ENABLED=1
+    - ARTIFACTS_DEBUG=1
 
 script:
+  - go build -o xq-$TRAVIS_BRANCH-$GIMME_OS-$GIMME_ARCH -v ./.
   - make test
   - echo $ARTIFACTS_TARGET_PATHS
 
