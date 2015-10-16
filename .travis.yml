@@ -1,3 +1,4 @@
 language: go
 install:
   - go get github.com/moovweb/gokogiri
+script: make test
