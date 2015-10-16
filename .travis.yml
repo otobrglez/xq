@@ -13,12 +13,18 @@ install:
   - go get github.com/moovweb/gokogiri
 
 env:
-  - GIMME_OS=linux GIMME_ARCH=amd64 CGO_ENABLED=1
-  - GIMME_OS=darwin GIMME_ARCH=amd64 CGO_ENABLED=1
-  - GIMME_OS=windows GIMME_ARCH=amd64 CGO_ENABLED=1
+  global:
+    - ARTIFACTS_TARGET_PATHS="$TRAVIS_BRANCH/$GIMME_OS/$GIMME_ARCH"
+    - CGO_ENABLED=1
+  matrix:
+  - GIMME_OS=linux GIMME_ARCH=amd64
+  - GIMME_OS=linux GIMME_ARCH=386
+  - GIMME_OS=darwin GIMME_ARCH=amd64
+  - GIMME_OS=darwin GIMME_ARCH=386
+  - GIMME_OS=windows GIMME_ARCH=amd64
+  - GIMME_OS=windows GIMME_ARCH=386
 
 script:
-  - go build -o xp-$GIMME_OS-$GIMME_ARCH -v ./.
   - make test
 
 notifications:
