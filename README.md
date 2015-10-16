@@ -1,6 +1,6 @@
 # xq
 
-[xq] is a lightweight command-line XPath processor (for HTML)
+[xq] is a lightweight command-line XPath processor for HTML and XML.
 
 ## Usage
 
