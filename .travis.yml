@@ -1,1 +1,3 @@
 language: go
+install:
+  - github.com/moovweb/gokogiri
