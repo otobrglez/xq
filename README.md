@@ -26,8 +26,13 @@ A bit more sophisticated XPath from standard input:
 
 ## Development
 
-		sudo apt-get install libxml2-dev
-		make test
+    sudo apt-get install libxml2-dev
+    make test
+
+## Details
+
+- Project was inspired by [jq](https://github.com/stedolan/jq) - Command-line JSON processor
+- Project uses [gokogiri](https://github.com/moovweb/gokogiri) and [libxml2](http://www.xmlsoft.org/).
 
 ## License & Author
 
