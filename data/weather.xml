@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml-stylesheet href="latest_ob.xsl" type="text/xsl"?>
+<current_observation version="1.0"
+	 xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="http://www.weather.gov/view/current_observation.xsd">
+	<credit>NOAA's National Weather Service</credit>
+	<credit_URL>http://weather.gov/</credit_URL>
+	<image>
+		<url>http://weather.gov/images/xml_logo.gif</url>
+		<title>NOAA's National Weather Service</title>
+		<link>http://weather.gov</link>
+	</image>
+	<suggested_pickup>15 minutes after the hour</suggested_pickup>
+	<suggested_pickup_period>60</suggested_pickup_period>
+	<location>Boston, Logan International Airport, MA</location>
+	<station_id>KBOS</station_id>
+	<latitude>42.36056</latitude>
+	<longitude>-71.01056</longitude>
+	<observation_time>Last Updated on Oct 16 2015, 1:54 pm EDT</observation_time>
+        <observation_time_rfc822>Fri, 16 Oct 2015 13:54:00 -0400</observation_time_rfc822>
+	<weather>A Few Clouds</weather>
+	<temperature_string>61.0 F (16.1 C)</temperature_string>
+	<temp_f>61.0</temp_f>
+	<temp_c>16.1</temp_c>
+	<relative_humidity>41</relative_humidity>
+	<wind_string>from the West at 18.4 gusting to 25.3 MPH (16 gusting to 22 KT)</wind_string>
+	<wind_dir>West</wind_dir>
+	<wind_degrees>290</wind_degrees>
+	<wind_mph>18.4</wind_mph>
+	<wind_gust_mph>25.3</wind_gust_mph>
+	<wind_kt>16</wind_kt>
+	<wind_gust_kt>22</wind_gust_kt>
+	<pressure_string>1011.6 mb</pressure_string>
+	<pressure_mb>1011.6</pressure_mb>
+	<pressure_in>29.88</pressure_in>
+	<dewpoint_string>37.0 F (2.8 C)</dewpoint_string>
+	<dewpoint_f>37.0</dewpoint_f>
+	<dewpoint_c>2.8</dewpoint_c>
+	<windchill_string>58 F (14 C)</windchill_string>
+      	<windchill_f>58</windchill_f>
+      	<windchill_c>14</windchill_c>
+	<visibility_mi>10.00</visibility_mi>
+ 	<icon_url_base>http://forecast.weather.gov/images/wtf/small/</icon_url_base>
+	<two_day_history_url>http://www.weather.gov/data/obhistory/KBOS.html</two_day_history_url>
+	<icon_url_name>few.png</icon_url_name>
+	<ob_url>http://www.weather.gov/data/METAR/KBOS.1.txt</ob_url>
+	<disclaimer_url>http://weather.gov/disclaimer.html</disclaimer_url>
+	<copyright_url>http://weather.gov/disclaimer.html</copyright_url>
+	<privacy_policy_url>http://weather.gov/notice.html</privacy_policy_url>
+</current_observation>
