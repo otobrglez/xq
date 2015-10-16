@@ -6,9 +6,6 @@
 
 ## Usage
 
-Download binary executable or compile your own build.
-
-
 Extracting simple content from HTML with XPath:
 
     curl -s https://news.ycombinator.com/ | ./xq "//title"
@@ -26,6 +23,11 @@ A bit more sophisticated XPath from standard input:
     #...
     #/wiki/Go_(programming_language)
     #...
+
+## Development
+
+		sudo apt-get install libxml2-dev
+		make test
 
 ## License & Author
 
