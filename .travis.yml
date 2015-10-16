@@ -2,7 +2,6 @@ language: go
 
 addons:
   artifacts: true
-  # s3_region: "us-west-1" # defaults to "us-east-1"
   debug: true
 
 sudo: false
@@ -16,6 +15,7 @@ env:
   - GIMME_OS=windows GIMME_ARCH=amd64 CGO_ENABLED=1
 
 script:
+  - go build -o xp-$GIMME_OS-$GIMME_ARCH -v ./.
   - make test
 
 notifications:
