@@ -6,6 +6,9 @@
 
 ## Usage
 
+Download binary executable or compile your own build.
+
+
 Extracting simple content from HTML with XPath:
 
     curl -s https://news.ycombinator.com/ | ./xq "//title"
@@ -23,10 +26,6 @@ A bit more sophisticated XPath from standard input:
     #...
     #/wiki/Go_(programming_language)
     #...
-
-Extracting from local file,... Trivial. :)
- 
-    ./xq "//table[@class='multicol'][7]//a/@href" ./data/wiki_page.html
 
 ## License & Author
 
