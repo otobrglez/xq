@@ -16,6 +16,7 @@ env:
   global:
     - ARTIFACTS_TARGET_PATHS="$TRAVIS_BRANCH/$GIMME_OS/$GIMME_ARCH"
     - CGO_ENABLED=1
+
   matrix:
   - GIMME_OS=linux GIMME_ARCH=amd64
   - GIMME_OS=linux GIMME_ARCH=386
@@ -26,6 +27,7 @@ env:
 
 script:
   - make test
+  - echo $ARTIFACTS_TARGET_PATHS
 
 notifications:
   email: false
