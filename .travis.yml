@@ -1,4 +1,14 @@
 language: go
+
+sudo: false
+
 install:
+  - go get github.com/mitchellh/gox
   - go get github.com/moovweb/gokogiri
-script: make test
+
+script:
+  - make test
+  - gox -cgo -os="linux" -arch="386 arm"
+
+notifications:
+  email: false
