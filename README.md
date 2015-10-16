@@ -1,22 +1,20 @@
 # xq
 
-[xq] is a lightweight command-line XPATH processor (for HTML)
-
-- [Oto Brglez](https://github.com/otobrglez)
+[xq] is a lightweight command-line XPath processor (for HTML)
 
 ## Usage
 
-Extracting simple content from HTML with XPATH:
+Extracting simple content from HTML with XPath:
 
     curl -s https://news.ycombinator.com/ | ./xq "//title"
     #=> Hacker News
 
-Extracting content from XML with XPATH:
+Extracting content from XML with XPath:
     
     curl -s http://w1.weather.gov/xml/current_obs/KBOS.xml | ./xq //current_observation/temp_f
     # => 59.0
 
-A bit more sophisticated XPATH from standard input: 
+A bit more sophisticated XPath from standard input: 
 
     cat ./data/wiki_page.html | ./xq "//table[@class='multicol'][7]//a/@href"
     #=>
@@ -24,7 +22,7 @@ A bit more sophisticated XPATH from standard input:
     #/wiki/Go_(programming_language)
     #...
 
-Extracting from file
+Extracting from local file,... Trivial. :)
  
     ./xq "//table[@class='multicol'][7]//a/@href" ./data/wiki_page.html
 
