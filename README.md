@@ -26,6 +26,7 @@ A bit more sophisticated XPath from standard input:
 
 ## Development
 
+    go get -u github.com/otobrglez/xq
     sudo apt-get install libxml2-dev
     make test
 
