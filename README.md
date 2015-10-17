@@ -13,7 +13,7 @@ Extracting simple content from HTML with XPath:
 
 Extracting content from XML with XPath:
     
-    curl -s http://w1.weather.gov/xml/current_obs/KBOS.xml | ./xq //current_observation/temp_f
+    curl -s http://w1.weather.gov/xml/current_obs/KBOS.xml | ./xq "//current_observation/temp_f"
     # => 59.0
 
 A bit more sophisticated XPath from standard input: 
